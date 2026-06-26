@@ -1,0 +1,97 @@
+{
+    "name": "SQN Shell",
+    "version": "1.0.0",
+    "codename": "Sine Qua Non",
+    "platform": "linux",
+    "description": "Portable SD-card-resident shell ecosystem",
+    "created": "2026-06-25",
+    "author": "SQN Project",
+    "license": "Personal Use",
+
+    "core_tools": {
+        "eza": {
+            "description": "Modern ls replacement",
+            "repo": "eza-community/eza",
+            "category": "files"
+        },
+        "bat": {
+            "description": "cat with syntax highlighting",
+            "repo": "sharkdp/bat",
+            "category": "files"
+        },
+        "rg": {
+            "description": "Fast recursive grep",
+            "repo": "BurntSushi/ripgrep",
+            "category": "search"
+        },
+        "fd": {
+            "description": "Simpler find alternative",
+            "repo": "sharkdp/fd",
+            "category": "search"
+        },
+        "btop": {
+            "description": "System monitor",
+            "repo": "aristocratos/btop",
+            "category": "system"
+        },
+        "dust": {
+            "description": "Disk usage analyzer",
+            "repo": "bootandy/dust",
+            "category": "system"
+        },
+        "zoxide": {
+            "description": "Smarter cd replacement",
+            "repo": "ajeetdsouza/zoxide",
+            "category": "navigation"
+        },
+        "fzf": {
+            "description": "Fuzzy finder",
+            "repo": "junegunn/fzf",
+            "category": "search"
+        },
+        "jq": {
+            "description": "JSON processor",
+            "repo": "jqlang/jq",
+            "category": "data"
+        },
+        "procs": {
+            "description": "Modern ps replacement",
+            "repo": "dalance/procs",
+            "category": "system"
+        },
+        "tldr": {
+            "description": "Simplified man pages",
+            "repo": "dbrgn/tealdeer",
+            "category": "docs"
+        }
+    },
+
+    "supported_architectures": ["x86_64", "aarch64", "armv7"],
+
+    "requirements": {
+        "bash": ">= 4.0",
+        "curl": "required",
+        "tar": "required",
+        "unzip": "required"
+    },
+
+    "features": [
+        "Portable SD-card residency",
+        "Plain-English command layer",
+        "Smart tool wrappers with graceful fallback",
+        "Distro-agnostic package management",
+        "GitHub API-driven tool updates",
+        "Subshell and source modes",
+        "Toolchain auto-detection",
+        "Lockfile-protected concurrent operations"
+    ],
+
+    "security": [
+        "No host filesystem writes",
+        "Helper allowlist enforcement",
+        "Destructive operation confirmation",
+        "Safe mathematical evaluation",
+        "Restricted subshell RC permissions",
+        "System path protection"
+    ]
+}
